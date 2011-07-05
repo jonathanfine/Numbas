@@ -1,6 +1,7 @@
 var Numbas = {};
 
 Numbas.queueScript = function(file, deps, callback){
+    callback();
     };
 
 load('runtime/scripts/math.js');
