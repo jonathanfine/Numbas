@@ -29,6 +29,12 @@ for (i=0; i < n; i++){
     expect = test_data[i];
     actual = try_call(test_fn, expect.input);
 
+    // Fix up numbas strangeness - discard 'Expression was: ...'.
+    // TODO: Better for numbas to add expression attribute to exception.
+    if (actual.exception){
+	actual.exception.message = actual.exception.message.split('\n')[0];
+    }
+
     if (expect.error === null || expect.error === undefined){
 
 	// Not expecting an error.
