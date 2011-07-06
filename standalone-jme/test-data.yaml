@@ -37,3 +37,9 @@
 -
   input: "["
   output: null
+-
+  input: "]"
+  error: no matching left bracket
+-
+  input: ")"
+  error: no matching left bracket
