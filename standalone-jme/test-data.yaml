@@ -31,3 +31,6 @@
 -
   input: (
   error: no matching right bracket
+-
+  input: a *
+  error: Not enough arguments for operation *
