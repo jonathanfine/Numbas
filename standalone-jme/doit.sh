@@ -6,4 +6,5 @@ cat \
     runtime/scripts/jme-display.js \
     > local/expr-to-latex.js
 
-js standalone-jme/doit.js
+# Use -f to execute these two script files.
+js -f local/expr-to-latex.js -f standalone-jme/testit.js
