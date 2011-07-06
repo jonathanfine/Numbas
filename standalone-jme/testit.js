@@ -39,14 +39,14 @@ for (i=0; i < n; i++){
 
 	// Not expecting an error.
 	if (actual.exception !== null){
-	    print('Got error, expecting value');
+	    print('Expecting value, got error');
 	    print('input: ' + expect.input);
 	    print('expect: ' + expect.output);
 	    print('actual: ' + actual.exception.message);
 	} 
 	else if (expect.output !== actual.value)
 	{
-	    print('Got wrong value');
+	    print('Wrong value');
 	    print('input: ' + expect.input);
 	    print('expect: ' + expect.output);
 	    print('actual: ' + actual.value);
@@ -56,14 +56,14 @@ for (i=0; i < n; i++){
 	
 	// We are expecting an error.
 	if (actual.exception === null){
-	    print('Got value, expecting exception');
+	    print('Expecting error, got value');
 	    print('input: ' + expect.input);
 	    print('expect: ' + expect.error);
 	    print('actual: ' + actual.value);
 	} 
 	else if (expect.error !== actual.exception.message)
 	{
-	    print('Got wrong exception');
+	    print('Wrong exception');
 	    print('input: ' + expect.input);
 	    print('expect: ' + expect.error);
 	    print('actual: ' + actual.exception.message);	    
