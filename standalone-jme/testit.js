@@ -40,6 +40,9 @@ for (i=0; i < n; i++){
 	// Not expecting an error.
 	if (actual.exception !== null){
 	    print('Got error, expecting value');
+	    print('input: ' + expect.input);
+	    print('expect: ' + expect.output);
+	    print('actual: ' + actual.exception.message);
 	} 
 	else if (expect.output !== actual.value)
 	{
