@@ -11,5 +11,4 @@ if __name__ == '__main__':
     tgt = os.path.join('local', 'test-data.json')
 
     data = yaml.load(open(src))
-    print data
     json.dump(data, open(tgt, 'wb'), indent=4)
