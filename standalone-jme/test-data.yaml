@@ -2,5 +2,32 @@
   input: 2 + 2
   output: 2 + 2
 -
+  input: x^2
+  output: x^{ 2 }
+-
+  input: a + b
+  output: a + b
+-
+  input: (a + b)
+  output: a + b
+-
+  input: "-1"
+  output: "-1"
+-
+  input: "+0"
+  output: "0"
+-
+  input: a/b/c
+  output: \frac{ \frac{ a }{ b } }{ c }
+-
+  input: (a/b)/c
+  output: \frac{ \frac{ a }{ b } }{ c }
+-
+  input: a * b
+  output: a b
+-
+  input: a b
+  output: a b
+-
   input: (
   error: no matching right bracket
