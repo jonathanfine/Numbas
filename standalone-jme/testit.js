@@ -30,21 +30,35 @@ for (i=0; i < n; i++){
     actual = try_call(test_fn, expect.input);
 
     if (expect.error === null || expect.error === undefined){
-	// Not expecting an error.
 
+	// Not expecting an error.
 	if (actual.exception !== null){
 	    print('Got error, expecting value');
-	    
-	} else if (expect.output !== actual.value){
-	    	    print('Got wrong value');
+	} 
+	else if (expect.output !== actual.value)
+	{
+	    print('Got wrong value');
 	    print('input: ' + expect.input);
 	    print('expect: ' + expect.output);
 	    print('actual: ' + actual.value);
 	}
 	
     } else {
-
-	// We are expecting an error.	
+	
+	// We are expecting an error.
+	if (actual.exception === null){
+	    print('Got value, expecting exception');
+	    print('input: ' + expect.input);
+	    print('expect: ' + expect.error);
+	    print('actual: ' + actual.value);
+	} 
+	else if (expect.error !== actual.exception.message)
+	{
+	    print('Got wrong exception');
+	    print('input: ' + expect.input);
+	    print('expect: ' + expect.error);
+	    print('actual: ' + actual.exception.message);	    
+	}
     }
 }
 
