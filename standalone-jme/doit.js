@@ -1,10 +1,3 @@
-var Numbas = {};
-var type = {};
-
-Numbas.queueScript = function(file, deps, callback){
-    callback();
-    };
-
 load('local/expr-to-latex.js');
 
 var actual = Numbas.jme.display.exprToLaTeX('2^(3+4)');

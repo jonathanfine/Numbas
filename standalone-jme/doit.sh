@@ -1,4 +1,5 @@
 cat \
+    standalone-jme/stub-numbas.js \
     runtime/scripts/math.js \
     runtime/scripts/util.js \
     runtime/scripts/jme.js \
