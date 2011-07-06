@@ -34,3 +34,6 @@
 -
   input: a *
   error: Not enough arguments for operation *
+-
+  input: "["
+  output: null

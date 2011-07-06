@@ -5,6 +5,9 @@ var try_call = function(fn, arg){
 
     try{
 	value = fn(arg);
+	// TODO: Resolve this hack for input "[".
+	if (value === undefined)
+	    value = null;
     } catch (x) {
 	exception = x;
     }
