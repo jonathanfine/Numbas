@@ -1,0 +1,13 @@
+* Remove global variable type.
+
+* Check for accidental global variables.
+
+* Policy on setting Array.prototype.merge in util.js etc.
+
+* Tabs in source files.
+
+* OU JavaScript coding standards and policies.
+
+* Use of JSMOD?
+
+* Refactor test framework.

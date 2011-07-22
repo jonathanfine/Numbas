@@ -889,10 +889,11 @@ var TString = types.TString = types.string = function(s)
 }
 TString.prototype.type = 'string';
 
-var TBool = types.TBool = types.boolean = function(b)
+var TBool = types.TBool = function(b)
 {
 	this.value = b;
 }
+type['boolean'] = TBool;	// 'boolean' is a reserved word.
 TBool.prototype.type = 'boolean';
 
 var TList = types.TList = types.list = function(n,value)
