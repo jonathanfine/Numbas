@@ -1,3 +1,9 @@
+# Create local folder if not already present.
+if [ ! -d local ]
+then
+    mkdir local
+fi
+
 cat \
     standalone-jme/stub-numbas.js \
     runtime/scripts/math.js \
