@@ -31,21 +31,24 @@ source_filenames = [
 ]
 
 
-def yaml_to_json():
+def yaml_to_json(names):
 
-    src = os.path.join('standalone-jme', 'test-data.yaml')
-    tgt = os.path.join('local', 'test-data.json')
+    for name in names:
+        src = os.path.join('standalone-jme', 'tests',name+'.yaml')
+        tgt = os.path.join('local', 'tests',name+'.json')
 
     data = yaml.load(open(src))
-    json.dump(data, open(tgt, 'wb'), indent=4)
+    json.dump(data, open(tgt, 'w'), indent=4)
 
 
 if __name__ == '__main__':
 
     if not os.path.isdir('local'):
         os.mkdir('local')
+        if not os.path.isdir(os.path.join('local','tests')):
+            os.mkdir(os.path.join('local','tests'))
 
-    yaml_to_json()
+    yaml_to_json(['expr-to-latex'])
 
     # Create the composite file.
     tgt = open('local/expr-to-latex.js', 'wb')
@@ -60,7 +63,7 @@ if __name__ == '__main__':
 
 
     # Run the test script.
-    args = 'js -f local/expr-to-latex.js -f standalone-jme/testit.js'.split()
+    args = 'js.bat -debug -modules local -modules standalone-jme -main standalone-jme/testit.js'.split()
     p = subprocess.Popen(args)
     p.wait()
 

@@ -43,3 +43,6 @@
 -
   input: ")"
   error: no matching left bracket
+-
+  input: cos(x)
+  output: \cos \left ( x \right )
