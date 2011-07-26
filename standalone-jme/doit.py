@@ -5,18 +5,28 @@ following should run the tests.
     clone-of-Numbas$ python standalone-jme/doit.py
     ok
 
-It requires a command line JavaScript interpreter to be installed - I
-use Mozilla's Rhino (which is implemented in Java).
-
-You could also use JSDB:
-    http://www.jsdb.org/
-
-You'll also have to install PyYaml.
+You'll have to install PyYaml.
     http://pypi.python.org/pypi/PyYAML/
+    
+You'll need the Rhino command line JavaScript interpreter to be installed
+(which is implemented in Java).  Ubuntu's prompt suggests Rhino when you 
+type 'js' at the command line.
 
+On Windows you'll need Java (of course).  Install Rhino by placing js.jar
+in the clone-of-Numbas folder.
+
+I've found that JSDB fails.  The most recent version with
+     error while loading shared libraries: libstdc++-6.dll: cannot open shared object file:
+     
+With version 1.7.3.6  of JSDB I get a runtime error (which might be due 
+to Rhino and JSDB interpreting JavaScript differently).
+    $ ./jsdb.exe local/expr-to-latex.js
+    local\expr-to-latex.js:1837     TypeError: functions[x].concat is not a function
+    Execution error in local\expr-to-latex.js.
 '''
 
 
+import sys
 import os
 import subprocess
 import yaml
@@ -63,7 +73,10 @@ if __name__ == '__main__':
 
 
     # Run the test script.
-    args = 'js.bat -debug -modules local -modules standalone-jme -main standalone-jme/testit.js'.split()
+    args = 'js -modules local -modules standalone-jme -main standalone-jme/testit.js'.split()
+    # Special case Windows batch file.
+    if sys.platform == 'win32':
+        args[0] = 'js.bat'
     p = subprocess.Popen(args)
     p.wait()
 

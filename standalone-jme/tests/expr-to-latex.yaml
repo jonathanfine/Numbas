@@ -36,7 +36,7 @@
   error: Not enough arguments for operation *
 -
   input: "["
-  output: null
+  error: No matching right square bracket to end list
 -
   input: "]"
   error: no matching left bracket
