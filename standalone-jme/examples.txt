@@ -1,7 +1,348 @@
-# This is a comment.
-2 + 2
-a + b
-# This succeeds!
-2 + + + 2
-# This fails.
-3 * * * 4
+# whitespace doesn't matter most of the time
+  x
+x   
+		x
+x + 1
+x+1
+x+ 1
+1x
+1 x
+# except for implicit multiplication
+xy
+x y
+
+
+## data types
+
+# numbers
+1
+1.1
+.1
+pi
+e
+i
+1+i
+i+1
+3-i
+i-3
+-3+i
+-3-i
+1+2i
+
+# booleans
+true
+false
+
+# strings
+"string: 1+1"
+
+# names
+x
+a1
+a9b
+a'
+a'''
+X
+Y'
+aXy1
+
+# functions
+f(x)
+f''(x)
+
+# list
+[]
+[1]
+[1,2,3.4]
+["a"]
+[1,true,"a"]
+[[1,2],[3,4]]
+
+# range		(not sure I like the look of these - CP)
+0..1
+0.1..1.2
+0..1#3
+0..1#0
+
+# operations
+x_1
+x_y
+x_true
+!x
+not x
+x and y
+x or y
+x xor y
+x isa "number"
+x <= y
+x >= y
+x <> y
+x && y
+x || y
+x | y
+x * y
+x + y
+x - y
+x / y
+x ^ y
+x < y
+x > y
+x = y
+x!
+
+# not enough arguments for op error:
+x+
+y*
+x and
+!
+
+# brackets
+(x)
+((x))
+(()x)
+()x
+x()
+# non-matching brackets
+(
+)
+[
+]
+x)
+(x
+(x+(y)
+x+(y))
+f(x))
+[x
+x]
+([x)]
+
+# greek
+alpha
+beta
+gamma
+delta
+epsilon
+zeta
+eta
+theta
+iota
+kappa
+lambda
+mu
+nu
+xi
+omicron
+pi
+rho
+sigma
+tau
+upsilon
+phi
+chi
+psi
+omega
+
+# special characters (hangover from old system, might disappear, deprecated)
+\\%
+\\!
+\\+
+\\-
+\\,
+\\.
+\\/
+\\:
+\\;
+\\?
+\\[
+\\]
+\\=
+\\*
+\\&
+\\<
+\\>
+\\|
+\\~
+\\(
+\\)
+\\0
+\\1
+\\2
+\\3
+\\4
+\\5
+\\6
+\\7
+\\8
+\\9
+\\a
+\\B
+\\something
+
+# implicit multiplication
+(x+2)3
+(x+2)y
+(x+2)(x+3)
+3(x+1)
+x(2+1)
+f(x)(2)
+# single-letter variable name followed by known function is an implicit multiplication
+xsin(1)
+ycos(2)
+Bgcd(3,2)
+
+# unary plus
++1
++0.2
++e
++pi
++i
++x
+(+1)
+[1,+2]
+[+1,+2]
+# unary minus
+-1
+-0.2
+-e
+-pi
+-i
+-x
+(-1)
+[-1,-2]
+[1,-2]
+
+# synonyms
+x & y
+x && y
+x and y
+x divides y
+x | y
+x or y
+x || y
+sqr(x)
+sqrt(x)
+gcf(x,y)
+gcd(x,y)
+sgn(x)
+sign(x)
+len(x)
+abs(x)
+length(x)
+
+# exponentiation is left-associative, everything else is right-associative
+x^y^z
+a/b/c
+a-(b-c)
+(a-b)-c
+
+# commutativity
+x*y*z
+(x*y)*z
+x*(y*z)
+x+y+z
+(x+y)+z
+x+(y+z)
+x&&y&&z
+(x&&y)&&z
+z&&(y&&z)
+x/y/z
+(x/y)/z
+x/(y/z)
+x||y||z
+(x || y) || z
+x || (y || z)
+
+# general functions
+f(x)
+dosomething(x,y,z)
+f()
+
+# operations and functions with special TeX
+!x
+x^y
+x^(y+z)
+x^(y/z)
+x^f(x)
+x*y^z
+y^z * x
+x*2^y
+2^y*x
+2*pi
+2*e
+e*2
+pi*2
+i*2
+2*i
+2*i^3
+x*i^3
+x*(-y)
+(-x)*y
+abs(13)
+abs([1,2,3])
+sqr(x)
+exp(3)
+fact(13)
+ceil(x)
+floor(x)
+int(x,y)
+defint(x,y,a,b)
+diff(x,y,1)
+diff(x,y,2)
+diff(x,y,n)
+partialdiff(x,y,1)
+partialdiff(x,y,2)
+partialdiff(x,y,n)
+limit(y,x,3)
+mod(x,y)
+perm(x,y)
+comb(x,y)
+root(3,2)
+if(x,y,z)
+switch(x,a,y,b,c)
+sin(x)
+cos(x)
+tan(x)
+sec(x)
+cot(x)
+cosec(x)
+arccos(x)
+arcsin(x)
+arctan(x)
+cosh(x)
+sinh(x)
+tanh(x)
+coth(x)
+cosech(x)
+sech(x)
+arcsinh(x)
+arccosh(x)
+arctanh(x)
+ln(x)
+log(x)
+
+# brackets only go round operands when strictly necessary
+(x+y)^z
+x+(y^z)
+x-(y+z)
+(x-y)+z
+x^(-(y+z))
+x^(-y)
+x^(y+z)
+(1+i)*x
+(1+i)+x
+
+# complex numbers
+i
+i*i
+i*i*i
+i*i*i*i
+i^2
+
+# trying to break it now
+
+# the extra plusses or minuses are interpreted as unary operators on b
+a++b
+a +++ b
+a --- b
+# but there's no unary multiplication
+a ** b
