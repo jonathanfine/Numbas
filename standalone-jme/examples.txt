@@ -1,0 +1,7 @@
+# This is a comment.
+2 + 2
+a + b
+# This succeeds!
+2 + + + 2
+# This fails.
+3 * * * 4
