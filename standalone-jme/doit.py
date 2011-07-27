@@ -47,7 +47,7 @@ def yaml_to_json():
     tgt = os.path.join('local', 'test-data.json')
 
     data = yaml.load(open(src))
-    json.dump(data, open(tgt, 'wb'), indent=4)
+    json.dump(data, open(tgt, 'w'), indent=4)
 
 
 if __name__ == '__main__':
