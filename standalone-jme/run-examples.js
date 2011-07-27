@@ -74,7 +74,7 @@ for(i=0; i<data.length; i++){
 	continue;
 
     // Make the function call, partially form the result.
-    actual = try_call(Numbas.jme.display.exprToLaTeX, result.input);
+    actual = try_call(Numbas.jme.display.exprToLaTeX, input);
     result = {};
     result.input = input;
 
