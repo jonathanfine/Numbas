@@ -56,3 +56,15 @@ if __name__ == '__main__':
     x = doit(lines)
 
     assert len(x) == len(lines), (len(x), len(lines))
+
+    f = open('local/max-out.txt', 'wb')
+    for out in x:
+        if out.startswith('$$') and out.endswith('$$'):
+            out = out[2:-2]
+        f.write(out + '\n')
+    f.close()
+
+    f = open('local/max-in.txt', 'wb')
+    for l in lines:
+        f.write(l + '\n')
+    f.close()
