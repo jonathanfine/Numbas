@@ -28,18 +28,13 @@ def filter_output(lines):
             continue
 
 
-def doit():
-    
+def doit(lines):
+
     # Create the input stream.
-    tgt_filename = 'local/examples.maxima'
-    lines = open('standalone-jme/examples.txt', 'rb')
-    
-    examples = list(filter_input(lines))
     pending = [
-        'tex(%s);\n' % example
-        for example in examples
+        'tex(%s);\n' % line
+        for line in lines
         ]
-    number_of_examples = len(pending)    
     pending.append('quit();\n')
     stdin = ''.join(pending)
 
@@ -49,15 +44,15 @@ def doit():
     stdout, stderr = p.communicate(stdin)
     p.wait()
 
-
     output_lines = stdout.split('\n')
-    example_output = list(filter_output(output_lines))
+    return list(filter_output(output_lines))[:-1] # Discard the quit() line.
 
-    a, b = len(pending), len(example_output)
-    assert a == b, ('length', a, b)
-
-    return zip(examples, example_output)
 
 if __name__ == '__main__':
 
-    x = doit()
+    lines = open('standalone-jme/examples.txt', 'rb')
+    lines = list(filter_input(lines))
+
+    x = doit(lines)
+
+    assert len(x) == len(lines), (len(x), len(lines))
