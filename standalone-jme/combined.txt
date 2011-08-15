@@ -1,0 +1,1173 @@
+x
+x
+x
+
+x
+x
+x
+
+x
+x
+x
+
+x + 1
+x + 1
+x+1
+
+x+1
+x + 1
+x+1
+
+x+ 1
+x + 1
+x+1
+
+1x
+1 x
+Incorrect syntax: X is not an infix operator
+
+1 x
+1 x
+Incorrect syntax: X is not an infix operator
+
+xy
+xy
+{\it xy}
+
+x y
+x y
+Incorrect syntax: Y is not an infix operator
+
+1
+1
+1
+
+1.1
+1.1
+1.1
+
+.1
+Invalid expression: .1
+0.1
+
+pi
+\pi
+\pi
+
+e
+e
+e
+
+i
+i
+i
+
+1+i
+1 + i
+i+1
+
+i+1
+i + 1
+i+1
+
+3-i
+3 - i
+3-i
+
+i-3
+i - 3
+i-3
+
+-3+i
+-3 + i
+i-3
+
+-3-i
+-3 - i
+-i-3
+
+1+2i
+1 + 2 i
+Incorrect syntax: I is not an infix operator
+
+true
+true
+\mathbf{true}
+
+false
+false
+No eqn given to TeX
+
+"string: 1+1"
+"\textrm{string: 1+1}"
+\mbox{{}string: 1+1{}}
+
+x
+x
+x
+
+a1
+a1
+{\it a_1}
+
+a9b
+a9b
+{\it a9b}
+
+a'
+a'
+Incorrect syntax: ' is not an infix operator
+
+a'''
+a'''
+Incorrect syntax: '' is not an infix operator
+
+X
+X
+X
+
+Y'
+Y'
+Incorrect syntax: ' is not an infix operator
+
+aXy1
+aXy1
+{\it aXy_1}
+
+f(x)
+f \left ( x \right )
+f\left(x\right)
+
+f''(x)
+f'' \left ( x \right )
+Incorrect syntax: '' is not an infix operator
+
+[]
+\{  \}
+\left[  \right] 
+
+[1]
+\{ 1 \}
+\left[ 1 \right] 
+
+[1,2,3.4]
+\{ 1, 2, 3.4 \}
+\left[ 1 , 2 , 3.4 \right] 
+
+["a"]
+\{ "\textrm{a}" \}
+\left[ \mbox{{}a{}} \right] 
+
+[1,true,"a"]
+\{ 1, true, "\textrm{a}" \}
+\left[ 1 , \mathbf{true} , \mbox{{}a{}} \right] 
+
+[[1,2],[3,4]]
+\{ \{ 1, 2 \}, \{ 3, 4 \} \}
+\left[ \left[ 1 , 2 \right]  , \left[ 3 , 4 \right]  \right] 
+
+0..1
+0 \dots 1
+Incorrect syntax: 0.10000000000000001 is not an infix operator
+
+0.1..1.2
+0.1 \dots 1.2
+Incorrect syntax: 0.20000000000000001 is not an infix operator
+
+0..1#3
+0 \dots 1 \, \# \, 3
+Incorrect syntax: 0.10000000000000001 is not an infix operator
+
+0..1#0
+0 \dots 1 \, \# \, 0
+Incorrect syntax: 0.10000000000000001 is not an infix operator
+
+x_1
+x_{1}
+{\it x\__1}
+
+x_y
+x_{y}
+{\it x\_y}
+
+x_true
+x_{true}
+{\it x\_true}
+
+!x
+\neg x
+Incorrect syntax: ! is not a prefix operator
+
+not x
+Not enough arguments for operation !
+\neg x
+
+x and y
+x \wedge y
+x\land y
+
+x or y
+x \vee y
+x\lor y
+
+x xor y
+x \, \textrm{XOR} \, y
+Incorrect syntax: XOR is not an infix operator
+
+x isa "number"
+Cannot find function isa in object [object Object].
+Incorrect syntax: ISA is not an infix operator
+
+x <= y
+x \leq y
+x\leq y
+
+x >= y
+x \geq y
+x\geq y
+
+x <> y
+
+eqx
+Incorrect syntax: > is not a prefix operator
+
+x && y
+x \wedge y
+Incorrect syntax: Missing )
+
+x || y
+x \vee y
+Incorrect syntax: | is not an infix operator
+
+x | y
+x | y
+Incorrect syntax: | is not an infix operator
+
+x * y
+x y
+x\,y
+
+x + y
+x + y
+y+x
+
+x - y
+x - y
+x-y
+
+x / y
+\frac{ x }{ y }
+{{x}\over{y}}
+
+x ^ y
+x^{ y }
+x^{y}
+
+x < y
+x \lt y
+x<y
+
+x > y
+x \gt y
+x>y
+
+x = y
+x = y
+x=y
+
+x!
+\neg x
+x!
+
+x+
+Not enough arguments for operation +
+Incorrect syntax: Illegal use of delimiter )
+
+y*
+Not enough arguments for operation *
+Incorrect syntax: Illegal use of delimiter )
+
+x and
+Not enough arguments for operation &&
+Incorrect syntax: Illegal use of delimiter )
+
+!
+Not enough arguments for operation !
+Incorrect syntax: ! is not a prefix operator
+
+(x)
+x
+x
+
+((x))
+x
+x
+
+(()x)
+Not enough arguments for operation *
+Incorrect syntax: Syntax error
+
+()x
+Not enough arguments for operation *
+Incorrect syntax: Syntax error
+
+x()
+x \left (  \right )
+x\left(\right)
+
+(
+no matching right bracket
+Incorrect syntax: Syntax error
+
+)
+no matching left bracket
+Incorrect syntax: Too many )'s
+
+[
+None (look into this).
+Incorrect syntax: Illegal use of delimiter )
+
+]
+no matching left bracket
+Incorrect syntax: Illegal use of delimiter ]
+
+x)
+no matching left bracket
+Incorrect syntax: Too many )'s
+
+(x
+no matching right bracket
+Incorrect syntax: Missing )
+
+(x+(y)
+no matching right bracket
+Incorrect syntax: Missing )
+
+x+(y))
+no matching left bracket
+Incorrect syntax: Too many )'s
+
+f(x))
+no matching left bracket
+Incorrect syntax: Too many )'s
+
+[x
+Expression can't be evaluated -- missing an operator.
+Incorrect syntax: Missing ]
+
+x]
+no matching left bracket
+Incorrect syntax: Missing )
+
+([x)]
+no matching left bracket
+Incorrect syntax: Missing ]
+
+alpha
+\alpha
+\alpha
+
+beta
+\beta
+\beta
+
+gamma
+\gamma
+\Gamma
+
+delta
+\delta
+\delta
+
+epsilon
+\epsilon
+\varepsilon
+
+zeta
+\zeta
+\zeta
+
+eta
+\eta
+\eta
+
+theta
+\theta
+\vartheta
+
+iota
+\iota
+\iota
+
+kappa
+\kappa
+\kappa
+
+lambda
+\lambda
+\lambda
+
+mu
+\mu
+\mu
+
+nu
+\nu
+\nu
+
+xi
+\xi
+\xi
+
+omicron
+\omicron
+ o
+
+pi
+\pi
+\pi
+
+rho
+\rho
+\rho
+
+sigma
+\sigma
+\sigma
+
+tau
+\tau
+\tau
+
+upsilon
+\upsilon
+\upsilon
+
+phi
+\phi
+\varphi
+
+chi
+\chi
+\chi
+
+psi
+\psi
+\psi
+
+omega
+\omega
+\omega
+
+\\%
+\%
+{\it \\%}
+
+\\!
+!
+\!
+
+\\+
++
+Incorrect syntax: Illegal use of delimiter )
+
+\\-
+-
+Incorrect syntax: Illegal use of delimiter )
+
+\\,
+,
+Incorrect syntax: Illegal use of delimiter )
+
+\\.
+.
+Incorrect syntax: Illegal use of delimiter )
+
+\\/
+/
+Incorrect syntax: Illegal use of delimiter )
+
+\\:
+:
+Incorrect syntax: Illegal use of delimiter )
+
+\\;
+;
+Incorrect syntax: Missing )
+
+\\?
+?
+Incorrect syntax: ) is not an infix operator
+
+\\[
+[
+Incorrect syntax: Illegal use of delimiter )
+
+\\]
+]
+Incorrect syntax: Missing )
+
+\\=
+=
+Incorrect syntax: Illegal use of delimiter )
+
+\\*
+\ast
+Incorrect syntax: Illegal use of delimiter )
+
+\\&
+\&
+Incorrect syntax: & is not an infix operator
+
+\\<
+\lt
+Incorrect syntax: Illegal use of delimiter )
+
+\\>
+\gt
+Incorrect syntax: Illegal use of delimiter )
+
+\\|
+\mid
+Incorrect syntax: | is not an infix operator
+
+\\~
+\sim
+Incorrect syntax: ~ is not an infix operator
+
+\\(
+\left ( \right .
+Incorrect syntax: Missing )
+
+\\)
+\left ) \right .
+Incorrect syntax: Too many )'s
+
+\\0
+0
+{\it \_0}
+
+\\1
+1
+{\it \_1}
+
+\\2
+2
+{\it \_2}
+
+\\3
+3
+{\it \_3}
+
+\\4
+4
+{\it \_4}
+
+\\5
+5
+{\it \_5}
+
+\\6
+6
+{\it \_6}
+
+\\7
+7
+{\it \_7}
+
+\\8
+8
+{\it \_8}
+
+\\9
+9
+{\it \_9}
+
+\\a
+\a
+{\it \a}
+
+\\B
+\B
+{\it \B}
+
+\\something
+\something
+{\it \something}
+
+(x+2)3
+\left ( x + 2 \right ) \times 3
+Incorrect syntax: 3 is not an infix operator
+
+(x+2)y
+\left ( x + 2 \right ) y
+Incorrect syntax: Y is not an infix operator
+
+(x+2)(x+3)
+\left ( x + 2 \right ) \left ( x + 3 \right )
+
+
+3(x+1)
+3 \left ( x + 1 \right )
+Incorrect syntax: Syntax error
+
+x(2+1)
+x \left ( 2 + 1 \right )
+x\left(3\right)
+
+f(x)(2)
+f \left ( x \right ) \times 2
+
+
+xsin(1)
+x \sin \left ( 1 \right )
+{\it xsin}\left(1\right)
+
+ycos(2)
+y \cos \left ( 2 \right )
+{\it ycos}\left(2\right)
+
+Bgcd(3,2)
+B \operatorname{gcd} \left ( 3, 2 \right )
+{\it Bgcd}\left(3 , 2\right)
+
++1
+1
+1
+
++0.2
+0.2
+0.2
+
++e
+e
+e
+
++pi
+\pi
+\pi
+
++i
+i
+i
+
++x
+x
+x
+
+(+1)
+1
+1
+
+[1,+2]
+\{ 1, 2 \}
+\left[ 1 , 2 \right] 
+
+[+1,+2]
+Not enough arguments for operation +
+\left[ 1 , 2 \right] 
+
+-1
+-1
+-1
+
+-0.2
+-0.2
+-0.2
+
+-e
+-e
+-e
+
+-pi
+-\pi
+-\pi
+
+-i
+-i
+-i
+
+-x
+-x
+-x
+
+(-1)
+-1
+-1
+
+[-1,-2]
+Not enough arguments for operation -
+\left[ -1 , -2 \right] 
+
+[1,-2]
+\{ 1, -2 \}
+\left[ 1 , -2 \right] 
+
+x & y
+Invalid expression: x & y
+Incorrect syntax: & is not an infix operator
+
+x && y
+x \wedge y
+Incorrect syntax: Missing )
+
+x and y
+x \wedge y
+x\land y
+
+x divides y
+x | y
+Incorrect syntax: DIVIDES is not an infix operator
+
+x | y
+x | y
+Incorrect syntax: | is not an infix operator
+
+x or y
+x \vee y
+x\lor y
+
+x || y
+x \vee y
+Incorrect syntax: | is not an infix operator
+
+sqr(x)
+\sqrt{ x }
+{\it sqr}\left(x\right)
+
+sqrt(x)
+\sqrt{ x }
+\sqrt{x}
+
+gcf(x,y)
+\operatorname{gcd} \left ( x, y \right )
+{\it gcf}\left(x , y\right)
+
+gcd(x,y)
+\operatorname{gcd} \left ( x, y \right )
+1
+
+sgn(x)
+\operatorname{sign} \left ( x \right )
+{\it sgn}\left(x\right)
+
+sign(x)
+\operatorname{sign} \left ( x \right )
+{\it pnz}
+
+len(x)
+\left | x \right |
+{\it len}\left(x\right)
+
+abs(x)
+\left | x \right |
+\left| x\right| 
+
+length(x)
+\left | x \right |
+
+
+x^y^z
+x^{ y^{ z } }
+x^{y^{z}}
+
+a/b/c
+\frac{ \frac{ a }{ b } }{ c }
+{{a}\over{b\,c}}
+
+a-(b-c)
+a - b + c
+c-b+a
+
+(a-b)-c
+a - b - c
+-c-b+a
+
+x*y*z
+x y z
+x\,y\,z
+
+(x*y)*z
+x y z
+x\,y\,z
+
+x*(y*z)
+x y z
+x\,y\,z
+
+x+y+z
+x + y + z
+z+y+x
+
+(x+y)+z
+x + y + z
+z+y+x
+
+x+(y+z)
+x + y + z
+z+y+x
+
+x&&y&&z
+x \wedge y \wedge z
+Incorrect syntax: Missing )
+
+(x&&y)&&z
+x \wedge y \wedge z
+Incorrect syntax: Missing )
+
+z&&(y&&z)
+z \wedge y \wedge z
+Incorrect syntax: Missing )
+
+x/y/z
+\frac{ \frac{ x }{ y } }{ z }
+{{x}\over{y\,z}}
+
+(x/y)/z
+\frac{ \frac{ x }{ y } }{ z }
+{{x}\over{y\,z}}
+
+x/(y/z)
+\frac{ x }{ \frac{ y }{ z } }
+{{x\,z}\over{y}}
+
+x||y||z
+x \vee y \vee z
+Incorrect syntax: | is not an infix operator
+
+(x || y) || z
+x \vee y \vee z
+Incorrect syntax: | is not an infix operator
+
+x || (y || z)
+x \vee y \vee z
+Incorrect syntax: | is not an infix operator
+
+f(x)
+f \left ( x \right )
+f\left(x\right)
+
+dosomething(x,y,z)
+\operatorname{dosomething} \left ( x, y, z \right )
+{\it dosomething}\left(x , y , z\right)
+
+f()
+f \left (  \right )
+f\left(\right)
+
+!x
+\neg x
+Incorrect syntax: ! is not a prefix operator
+
+x^y
+x^{ y }
+x^{y}
+
+x^(y+z)
+x^{ y + z }
+x^{z+y}
+
+x^(y/z)
+x^{ \frac{ y }{ z } }
+x^{{{y}\over{z}}}
+
+x^f(x)
+x^{ f \left ( x \right ) }
+x^{f\left(x\right)}
+
+x*y^z
+x y^{ z }
+x\,y^{z}
+
+y^z * x
+y^{ z } x
+x\,y^{z}
+
+x*2^y
+x \times 2^{ y }
+x\,2^{y}
+
+2^y*x
+2^{ y } x
+x\,2^{y}
+
+2*pi
+2 \pi
+2\,\pi
+
+2*e
+2 e
+2\,e
+
+e*2
+e \times 2
+2\,e
+
+pi*2
+\pi \times 2
+2\,\pi
+
+i*2
+2 i
+2\,i
+
+2*i
+2 i
+2\,i
+
+2*i^3
+2 i^{ 3 }
+2\,i^3
+
+x*i^3
+x \times i^{ 3 }
+i^3\,x
+
+x*(-y)
+-x y
+-x\,y
+
+(-x)*y
+-x y
+-x\,y
+
+abs(13)
+\left | 13 \right |
+13
+
+abs([1,2,3])
+\left | \{ 1, 2, 3 \} \right |
+\left[ 1 , 2 , 3 \right] 
+
+sqr(x)
+\sqrt{ x }
+{\it sqr}\left(x\right)
+
+exp(3)
+e^{ 3 }
+e^3
+
+fact(13)
+13!
+{\it fact}\left(13\right)
+
+ceil(x)
+\left \lceil x \right \rceil
+{\it ceil}\left(x\right)
+
+floor(x)
+\left \lfloor x \right \rfloor
+\left \lfloor x \right \rfloor
+
+int(x,y)
+\int \! x \, dy
+{\it int}\left(x , y\right)
+
+defint(x,y,a,b)
+\int_{a}^{b} \! x \, dy
+\left(b-a\right)\,x
+
+diff(x,y,1)
+\frac{dx}{dy}
+0
+
+diff(x,y,2)
+\frac{d^{2}x}{dy^{2}}
+0
+
+diff(x,y,n)
+\frac{d^{n}x}{dy^{n}}
+{{d^{n}}\over{d\,y^{n}}}\,x
+
+partialdiff(x,y,1)
+\frac{\partial x}{\partial y}
+{\it partialdiff}\left(x , y , 1\right)
+
+partialdiff(x,y,2)
+\frac{\partial ^{2}x}{\partial y^{2}}
+{\it partialdiff}\left(x , y , 2\right)
+
+partialdiff(x,y,n)
+\frac{\partial ^{n}x}{\partial y^{n}}
+{\it partialdiff}\left(x , y , n\right)
+
+limit(y,x,3)
+\lim_{x \to 3}{y}
+y
+
+mod(x,y)
+x \pmod{y}
+x \rm{mod} y
+
+perm(x,y)
+^{x}\kern-2pt P_{y}
+{\it perm}\left(x , y\right)
+
+comb(x,y)
+^{x}\kern-1pt C_{y}
+{\it comb}\left(x , y\right)
+
+root(3,2)
+\sqrt[3]{2}
+{\it root}\left(3 , 2\right)
+
+if(x,y,z)
+\textbf{If} \; x \; \textbf{then} \; y \; \textbf{else} \; z
+Incorrect syntax: Missing `then'
+
+switch(x,a,y,b,c)
+\operatorname{switch} \left ( x, a, y, b, c \right )
+{\it switch}\left(x , a , y , b , c\right)
+
+sin(x)
+\sin \left ( x \right )
+\sin x
+
+cos(x)
+\cos \left ( x \right )
+\cos x
+
+tan(x)
+\tan \left ( x \right )
+\tan x
+
+sec(x)
+\sec \left ( x \right )
+\sec x
+
+cot(x)
+\cot \left ( x \right )
+\cot x
+
+cosec(x)
+\csc \left ( x \right )
+{\it cosec}\left(x\right)
+
+arccos(x)
+\arccos \left ( x \right )
+{\it arccos}\left(x\right)
+
+arcsin(x)
+\arcsin \left ( x \right )
+{\it arcsin}\left(x\right)
+
+arctan(x)
+\arctan \left ( x \right )
+{\it arctan}\left(x\right)
+
+cosh(x)
+\cosh \left ( x \right )
+\cosh x
+
+sinh(x)
+\sinh \left ( x \right )
+\sinh x
+
+tanh(x)
+\tanh \left ( x \right )
+\tanh x
+
+coth(x)
+\coth \left ( x \right )
+\coth x
+
+cosech(x)
+\operatorname{cosech} \left ( x \right )
+{\it cosech}\left(x\right)
+
+sech(x)
+\operatorname{sech} \left ( x \right )
+{\rm sech}\; x
+
+arcsinh(x)
+\operatorname{arcsinh} \left ( x \right )
+{\it arcsinh}\left(x\right)
+
+arccosh(x)
+\operatorname{arccosh} \left ( x \right )
+{\it arccosh}\left(x\right)
+
+arctanh(x)
+\operatorname{arctanh} \left ( x \right )
+{\it arctanh}\left(x\right)
+
+ln(x)
+\ln \left ( x \right )
+{\it ln}\left(x\right)
+
+log(x)
+\log_{10} \left ( x \right )
+\log x
+
+(x+y)^z
+\left ( x + y \right )^{ z }
+\left(y+x\right)^{z}
+
+x+(y^z)
+x + y^{ z }
+y^{z}+x
+
+x-(y+z)
+x - y - z
+-z-y+x
+
+(x-y)+z
+x - y + z
+z-y+x
+
+x^(-(y+z))
+x^{ -\left ( y + z \right ) }
+x^{-z-y}
+
+x^(-y)
+x^{ -y }
+{{1}\over{x^{y}}}
+
+x^(y+z)
+x^{ y + z }
+x^{z+y}
+
+(1+i)*x
+\left ( 1 + i \right ) x
+\left(i+1\right)\,x
+
+(1+i)+x
+1 + i + x
+x+i+1
+
+i
+i
+i
+
+i*i
+-1
+i^2
+
+i*i*i
+-i
+i^3
+
+i*i*i*i
+1
+i^4
+
+i^2
+i^{ 2 }
+i^2
+
+a++b
+a + b
+b+a
+
+a +++ b
+a + b
+b+a
+
+a --- b
+-a + b
+a-b
+
+a ** b
+Not enough arguments for operation *
+a^{b}
+
